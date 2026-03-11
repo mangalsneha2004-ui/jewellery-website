@@ -1,0 +1,873 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #f6f4f2 !important;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff; /* background zaroori hai */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: smoothScroll 0.4s ease-in-out;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+nav {
+  position: absolute !important;
+  width: 100%;
+  z-index: 2;
+}
+nav .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 35px;
+  color: #000;
+}
+nav .nav-link:hover::before {
+  background-color: #CB9274;
+  width: 35px;
+  left: -30px;
+}
+nav .nav-link::before {
+  position: absolute;
+  content: "";
+  background: #000;
+  height: 2px;
+  width: 20px;
+  left: -16px;
+  top: 14px;
+  transition: 0.5s;
+}
+nav a.navbar-brand img {
+  width: 150px;
+}
+nav li.dropdown {
+  width: -moz-min-content;
+  width: min-content;
+}
+nav li.dropdown:hover .dropdown-list {
+  opacity: 1 !important;
+}
+nav .dropdown-list {
+  background: white;
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.main-header {
+  background: url(https://bijoux.vamtam.com/wp-content/uploads/2020/11/iStock-1153651536-1.png);
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  align-content: center;
+  position: relative;
+}
+header .content h1.heading {
+  font-family: "SortsMillGoudyTTRegular", serif;
+  font-size: 130px;
+  line-height: 120px;
+  letter-spacing: -2.33px;
+  text-transform: capitalize;
+}
+header .content p {
+  font-family: "Sorts Mill Goudy";
+  font-size: 36px;
+  font-style: italic;
+  line-height: 42px;
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+header .content .header_btn {
+  background: #ffffff;
+  padding: 8px 15px;
+  padding-left: 30px;
+  position: relative;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+header .content .header_btn:hover {
+  background-color: #000;
+  color: #ffffff;
+  padding-left: 40px;
+}
+header .content .header_btn:hover::before {
+  width: 30px;
+  left: 7px;
+}
+header .content .header_btn::before {
+  position: absolute;
+  content: "";
+  background: #CB9274;
+  height: 2px;
+  width: 20px;
+  left: 4px;
+  top: 17px;
+  transition: 0.5s;
+}
+header ul {
+  transform: rotate(-90deg);
+}
+header ul li:nth-child(2) {
+  margin-left: 54px;
+}
+header ul a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+header .down-slip a {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  font-size: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: 35px;
+  font-weight: 500;
+  animation: bounceVibrate 2s infinite;
+}
+@keyframes bounceVibrate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.about-us {
+  height: 100vh;
+  align-content: center;
+  position: relative;
+}
+.about-us .text {
+  position: relative;
+  z-index: 1;
+}
+.about-us .text-1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  top: 155px;
+  line-height: 0;
+  font-family: "SortsMillGoudyTTRegular", serif;
+  font-size: 240px;
+  color: #EEE8E3;
+  z-index: 0;
+}
+.about-us .text-2 {
+  right: 0;
+  bottom: 120px;
+  line-height: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  font-family: "SortsMillGoudyTTRegular", serif;
+  font-size: 240px;
+  color: #EEE8E3;
+  z-index: 0;
+}
+.about-us p {
+  font-family: "Sorts Mill Goudy";
+  font-style: italic;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+.jewellery-collection {
+  height: 100vh;
+  align-content: center;
+  position: relative;
+}
+.jewellery-collection .heading h1 {
+  font-size: 35px;
+  font-family: "Sorts Mill Goudy";
+  margin-bottom: 20px;
+}
+.jewellery-collection .jewellery-text {
+  margin: 20px 0 0;
+}
+.jewellery-collection .jewellery-text .jewellery-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.jewellery-collection .call-us {
+  margin-top: 50px;
+  font-family: "SortsMillGoudyTTRegular", serif;
+}
+.jewellery-collection .call-us a {
+  color: #CB9274;
+  font-weight: bold;
+}
+.jewellery-collection .jewellery-img img {
+  width: 100%;
+}
+
+.services {
+  font-family: "SortsMillGoudyTTRegular", serif;
+}
+.services .head {
+  max-width: 1400px;
+  margin: auto;
+  padding: 70px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.services .nav-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background: #000;
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.services .nav-btn:hover {
+  background: #CB9274;
+}
+.services .nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.services .controls {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.services .track {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: center;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 40px;
+}
+.services .track::-webkit-scrollbar {
+  display: none;
+}
+.services .service-card {
+  position: relative;
+  flex: 0 0 5rem;
+  height: 26rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex-basis 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.services .service-card[active] {
+  flex-basis: 30rem;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.45);
+}
+.services .service-card__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.75) saturate(75%);
+  transition: filter 0.3s, transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.services .service-card:hover .service-card__bg {
+  filter: brightness(0.9) saturate(100%);
+  transform: scale(1.06);
+}
+.services .service-card__content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0;
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.85) 100%);
+  z-index: 2;
+}
+.services .service-card__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.35rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.services .service-card__thumb,
+.services .service-card__desc,
+.services .service-card__btn {
+  display: none;
+}
+.services .service-card[active] .service-card__content {
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  gap: 1.1rem;
+}
+.services .service-card[active] .service-card__title {
+  writing-mode: horizontal-tb;
+  transform: none;
+  font-size: 2.4rem;
+}
+.services .service-card[active] .service-card__thumb,
+.services .service-card[active] .service-card__desc,
+.services .service-card[active] .service-card__btn {
+  display: block;
+}
+.services .service-card__thumb {
+  width: 133px;
+  height: 269px;
+  border-radius: 0.45rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.services .service-card__desc {
+  color: #f6f4f2;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 16rem;
+}
+.services .service-card__btn {
+  padding: 0.55rem 1.3rem;
+  border: none;
+  border-radius: 9999px;
+  background: #CB9274;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.services .service-card__btn:hover {
+  background: #ff824f;
+}
+
+.collection {
+  height: 100vh;
+  align-content: center;
+  position: relative;
+}
+.collection .collection-part {
+  text-align: center;
+  color: #CB9274;
+  position: relative;
+}
+.collection .collection-part h1 {
+  font-size: 240px;
+  opacity: 0.7;
+  font-family: "SortsMillGoudyTTRegular", serif;
+}
+.collection .collection-img {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+.contact_us .content {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+.contact_us .content h1 {
+  font-size: 70px;
+  font-family: "SortsMillGoudyTTRegular", serif;
+}
+.contact_us .content a {
+  text-decoration: none;
+  color: #000;
+}
+.contact_us .contact-form .form-group {
+  margin-bottom: 30px;
+}
+.contact_us .contact-form label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.6em;
+  margin-bottom: 5px;
+}
+.contact_us .contact-form input, .contact_us .contact-form select, .contact_us .contact-form textarea {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.275);
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+}
+.contact_us .contact-form textarea {
+  height: auto !important;
+}
+.contact_us .contact-form button {
+  background: #ffffff;
+  padding: 8px 15px;
+  padding-left: 30px;
+  position: relative;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border: none;
+}
+.contact_us .contact-form button:hover {
+  background-color: #000;
+  color: #ffffff;
+  padding-left: 40px;
+}
+.contact_us .contact-form button:hover::before {
+  width: 30px;
+  left: 7px;
+}
+.contact_us .contact-form button::before {
+  position: absolute;
+  content: "";
+  background: #CB9274;
+  height: 2px;
+  width: 20px;
+  left: 4px;
+  top: 17px;
+  transition: 0.5s;
+}
+
+footer .footer-logo {
+  margin-bottom: 50px;
+}
+footer .footer-logo img {
+  width: 200px;
+}
+footer .heading h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+footer ul {
+  text-align: center;
+}
+footer ul li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: lowercase;
+  line-height: 1.4em;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: #CB9274;
+}
+footer .footer-content {
+  text-align: center;
+}
+footer .icons-list a {
+  font-size: 30px;
+  margin-right: 10px;
+}
+footer .icons-list a[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+footer .icons-list a[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%; /* Tooltip upar dikhai dega */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 0px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  z-index: 10;
+}
+footer .icons-list a[data-tooltip]:hover::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+footer .footer-bottom p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.silver-header {
+  background: url(https://bijoux.vamtam.com/wp-content/uploads/2020/10/iStock-117742181.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.silver-header .content h1.heading {
+  font-size: 70px;
+  line-height: 95px;
+  letter-spacing: 0.67px;
+}
+
+@media (min-width: 1200px) {
+  .contact_us {
+    height: 100vh;
+    align-content: center;
+    position: relative;
+  }
+}
+@media (max-width: 1200px) {
+  header .content h1.heading {
+    font-size: 120px;
+    line-height: 100px;
+  }
+  header .content p {
+    font-size: 25px;
+    margin: 18px 0;
+  }
+  .silver-header .content h1.heading {
+    font-size: 60px;
+    line-height: 95px;
+  }
+  .collection .collection-part h1 {
+    font-size: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .contact_us .absoulutly-img {
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    left: 34%;
+    top: -195px;
+    align-content: center;
+  }
+  footer {
+    height: 100vh;
+    align-content: center;
+    position: relative;
+  }
+  footer .icons-list {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 999px) {
+  .collection .collection-part h1 {
+    font-size: 195px;
+  }
+  footer {
+    padding-top: 40px;
+  }
+  footer .icons-list {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .navbar-nav .nav-link {
+    margin-left: 35px;
+  }
+  .navbar-nav .nav-link:hover::before {
+    left: -42px;
+  }
+  .navbar-nav .nav-link::before {
+    left: -25px;
+  }
+  header .content h1.heading {
+    font-size: 100px;
+    line-height: 95px;
+  }
+  header .content p {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .silver-header .content h1.heading {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .about-us .text-1, .about-us .text-2 {
+    font-size: 200px;
+  }
+  .about-us p {
+    font-size: 30px;
+    line-height: 1.5em;
+  }
+  .jewellery-collection {
+    height: auto !important;
+  }
+  .collection .collection-part h1 {
+    font-size: 150px;
+  }
+  .jewellery-collection .call-us {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 80vh;
+  }
+  header .content h1.heading {
+    font-size: 80px;
+    line-height: 75px;
+  }
+  header .content p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  header ul.end-0 {
+    right: -90px !important;
+    bottom: 115px;
+  }
+  header ul.end-0 li:nth-child(2) {
+    margin-left: 20px !important;
+  }
+  .silver-header .content h1.heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .about-us {
+    height: 80vh;
+  }
+  .about-us .text-1, .about-us .text-2 {
+    font-size: 135px;
+  }
+  .about-us .text-1 {
+    top: 80px;
+  }
+  .about-us .text-2 {
+    bottom: 100px;
+  }
+  .about-us p {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .collection .collection-part h1 {
+    font-size: 125px;
+  }
+}
+@media (max-width: 700px) {
+  .about-us .text-1, .about-us .text-2 {
+    font-size: 155px;
+  }
+  .about-us p {
+    font-size: 27px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 653px) {
+  .collection .collection-part h1 {
+    font-size: 115px;
+  }
+  footer .icons-list {
+    margin-bottom: 65px;
+  }
+}
+@media (max-width: 575px) {
+  header .content h1.heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  header .content p {
+    font-size: 15px;
+    margin: 0;
+  }
+  .silver-header .content h1.heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .about-us .text-1, .about-us .text-2 {
+    font-size: 100px;
+  }
+  .about-us p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .jewellery-collection .call-us {
+    margin-top: 15px;
+  }
+  .collection .collection-part h1 {
+    font-size: 100px;
+  }
+  footer .footer-logo {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 510px) {
+  .collection .collection-part h1 {
+    font-size: 80px;
+  }
+  nav .dropdown-list {
+    right: 0;
+  }
+}
+@media (max-width: 406px) {
+  .collection .collection-part h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --closed: 4rem;
+    --open: 22rem;
+  }
+  .services .track {
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+  .services .service-card {
+    height: 20rem;
+  }
+  .services .service-card__title {
+    font-size: 1.1rem;
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: center;
+    padding-inline: 0.3rem;
+  }
+  .services .nav-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --closed: 100%;
+    --open: 100%;
+    --gap: 0.8rem;
+  }
+  .services .slider {
+    padding: 0 15px;
+  }
+  .services .track {
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    gap: 0.8rem;
+    padding-bottom: 20px;
+  }
+  .services .service-card {
+    height: auto;
+    min-height: 80px;
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  .services .service-card[active] {
+    min-height: 300px;
+    transform: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  .services .service-card__content {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+  .services .service-card__title {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 1.2rem;
+    margin-right: auto;
+  }
+  .services .service-card__thumb,
+  .services .service-card__desc,
+  .services .service-card__btn {
+    display: none;
+  }
+  .services .service-card[active] .service-card__content {
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+  .services .service-card[active] .service-card__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .services .service-card[active] .service-card__thumb {
+    width: 200px;
+    height: 267px;
+    border-radius: 0.35rem;
+    margin-bottom: 1rem;
+  }
+  .services .service-card[active] .service-card__desc {
+    font-size: 0.95rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .services .service-card[active] .service-card__btn {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  .services .controls {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 15px 20px;
+  }
+  .services .nav-btn {
+    position: static;
+    transform: none;
+  }
+}/*# sourceMappingURL=Style.css.map */
